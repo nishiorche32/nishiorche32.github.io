@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>お問い合わせ | 広島大学霞管弦楽団</title>
+<link rel="stylesheet" type="text/css" href="src/style.css">
+<link rel="icon" href="src/favicon.ico">
+<script src="src/google-analytics.js"></script>
+
+<main lang="ja">
+  <iframe id="header" src="src/header.html"></iframe>
+  <nav class="breadcrumb">
+    <p><a href="./">ホーム</a></p> &gt;
+    <p><a href="#">お問い合わせ</a></p>
+  </nav>
+
+
+  <section>
+    <style>
+      form {
+        white-space: normal;
+        vertical-align: baseline;
+        margin: 0 auto;
+        max-width: 480px;
+      }
+
+      label {
+        display: block;
+        margin: 14px 0 0 0;
+        height: 22px;
+      }
+
+      input,
+      textarea,
+      button {
+        display: block;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font: 200 100%/28px 'Hiragino Sans', sans-serif;
+        -webkit-appearance: none;
+      }
+
+      input,
+      textarea {
+        margin: 0;
+        border: 1px solid #bbb;
+        padding: 0 .5em;
+        outline: 0;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1px solid #3498db;
+      }
+
+      input {
+        width: 240px;
+        height: 28px;
+      }
+
+      textarea {
+        width: 90%;
+        height: 10em;
+        resize: vertical;
+      }
+
+      button {
+        border: none;
+        margin-top: 40px;
+        padding: 3px 20px;
+        color: #fff;
+        background-color: #3498db;
+        transition: background-color .2s;
+      }
+
+      button:focus,
+      button:hover,
+      button:active {
+        background-color: #56bafe;
+      }
+
+      input[type="hidden"] {
+        display: none;
+      }
+
+      button.disabled {
+        pointer-events: none;
+        background-color: #cdcdcd;
+        color: #fff;
+      }
+
+      table.staff {
+        width: 100%;
+        white-space: normal;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 95%;
+      }
+
+      table.staff th,
+      table.staff td {
+        padding: .5em;
+      }
+
+      table.staff td {
+        border-bottom: 1px dotted #ccc;
+      }
+
+      table.staff tr:nth-of-type(2n) {}
+
+      table.staff th {
+        font-weight: inherit;
+      }
+
+      table.staff ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media screen and (max-width: 580px) {
+
+        table.staff,
+        table.staff tbody,
+        table.staff tr,
+        table.staff td {
+          display: block;
+        }
+
+        table.staff td:nth-child(1),
+        table.staff td:nth-child(2) {
+          display: inline-block;
+        }
+
+        table.staff th {
+          display: none;
+        }
+
+        table.staff tr {
+          margin-top: 2em;
+        }
+
+        table.staff td {
+          border: none;
+          padding: 0;
+        }
+
+        table.staff td:first-child {
+          padding-right: 1em;
+        }
+
+        table.staff li {
+          display: inline-block;
+        }
+
+        table.staff li:not(:first-child):before {
+          content: '・';
+        }
+      }
+    </style>
+    <script>
+      function g(s) {
+        var m = 'nish' + 'iorche32' + s + '@gm' + 'ail.c' + 'om';
+        document.write('<a href="mailto:' + m + '">' + m + '</a>');
+      }
+    </script>
+    <article>
+      <h2 id="mail-form">メールフォーム</h2>
+
+      <form id="contactform" method="post" accept-charset="UTF-8">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required />
+        <label for="mail">メールアドレス</label>
+        <input type="email" id="mail" name="mail" required />
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="hidden" id="_id" name="_id" />
+        <button type="submit" class="disabled">送信</button>
+      </form>
+
+      <h2 id="staff">第29回実行委員</h2>
+      <table class="staff">
+        <tr>
+          <th>役職
+          <th>名前
+          <th>連絡先
+        <tr>
+          <td>実行委員長
+          <td>松島彩子
+          <td>
+            <script>
+              g('jiccho')
+            </script>
+        <tr>
+          <td>副実行委員長・渉外
+          <td>上田智也
+          <td>
+            <script>
+              g('shogai')
+            </script>
+        <tr>
+          <td>会計
+          <td>
+            <ul>
+              <li>森田智子
+              <li>大内徳子
+            </ul>
+          <td>
+            <script>
+              g('kaikei')
+            </script>
+        <tr>
+          <td>合宿所
+          <td>
+            <ul>
+              <li>藤井泰斗
+              <li>奥崎体
+            </ul>
+          <td>
+            <script>
+              g('gasshukujo')
+            </script>
+        <tr>
+          <td>ホール
+          <td>山口瑞生
+          <td>
+            <script>
+              g('hall')
+            </script>
+        <tr>
+          <td>レセプション・打ち上げ
+          <td>山田息吹
+          <td>
+            <script>
+              g('reception')
+            </script>
+        <tr>
+          <td>CD・DVD
+          <td>遠藤正也
+          <td>
+            <script>
+              g('video')
+            </script>
+        <tr>
+          <td>楽譜
+          <td>頼近恭典
+          <td>
+        <tr>
+          <td>譜面台
+          <td>久保田千貴
+          <td>
+            <script>
+              g('fumendai')
+            </script>
+        <tr>
+          <td>Web
+          <td>松本洋一郎
+          <td>
+            <script>
+              g('web')
+            </script>
+        <tr>
+          <td>エントリー
+          <td>松本洋一郎
+          <td>
+            <script>
+              g('entry')
+            </script>
+        <tr>
+          <td>デザイン
+          <td>青山雄一郎
+          <td>
+            <script>
+              g('design')
+            </script>
+        <tr>
+          <td>パンフレット・チケット
+          <td>井上和子
+          <td>
+            <script>
+              g('ticket')
+            </script>
+        <tr>
+          <td>広報
+          <td>
+            <ul>
+              <li>佐藤真由
+              <li>平岡敬一
+            </ul>
+          <td>
+            <script>
+              g('kouhou')
+            </script>
+        <tr>
+          <td>後援
+          <td>
+            <ul>
+              <li>佐藤真由
+              <li>平岡敬一
+            </ul>
+          <td>
+            <script>
+              g('kouen')
+            </script>
+        <tr>
+          <td>前当日
+          <td>
+            <ul>
+              <li>金井陽奈
+              <li>山口栞
+            </ul>
+          <td>
+            <script>
+              g('zentoujitsu')
+            </script>
+        <tr>
+          <td>運搬・特殊楽器
+          <td>渡辺詩織
+          <td>
+            <script>
+              g('unpan')
+            </script>
+        <tr>
+          <td>指揮者
+          <td>
+            <ul>
+              <li>岩本奈々
+              <li>古賀愛華
+            </ul>
+          <td>
+        <tr>
+          <td>スタッフ
+          <td>泉亮介
+          <td>
+      </table>
+    </article>
+  </section>
+
+
+  <iframe id="footer" src="src/footer.html"></iframe>
+</main>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "/~kasumin/contact.html",
+        "name": "お問い合わせ"
+      }
+    }]
+  }
+</script>
