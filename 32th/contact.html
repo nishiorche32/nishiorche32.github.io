@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>お問い合わせ | 広島大学霞管弦楽団</title>
+<meta name="author" content="西日本医科学生オーケストラフェスティバル実行委員会">
+<meta name="description" content="第32回西オケは広島大学主管で運営しています。主管へのお問い合わせはこちらから">
+<meta name="apple-mobile-web-app-title" content="お問い合わせ">
+<title>お問い合わせ | 第32回西オケ</title>
+<link rel="stylesheet" href="src/normalize.css">
 <link rel="stylesheet" type="text/css" href="src/style.css">
 <link rel="icon" href="src/favicon.ico">
 <script src="src/google-analytics.js"></script>
@@ -81,11 +85,11 @@
         display: none;
       }
 
-      button.disabled {
+      /*button.disabled {
         pointer-events: none;
         background-color: #cdcdcd;
         color: #fff;
-      }
+      }*/
 
       table.staff {
         width: 100%;
@@ -176,7 +180,7 @@
         <button type="submit" class="disabled">送信</button>
       </form>
 
-      <h2 id="staff">第29回実行委員</h2>
+      <h2 id="staff">第32回実行委員</h2>
       <table class="staff">
         <tr>
           <th>役職
@@ -184,35 +188,43 @@
           <th>連絡先
         <tr>
           <td>実行委員長
-          <td>松島彩子
+          <td>山田息吹
           <td>
             <script>
               g('jiccho')
             </script>
         <tr>
-          <td>副実行委員長・渉外
-          <td>上田智也
+          <td>副実行委員長
           <td>
-            <script>
-              g('shogai')
-            </script>
+            <ul>
+              <li>久保田千貴</li>
+              <li>長岡真実</li>
+            </ul>
+          <td>
         <tr>
           <td>会計
           <td>
             <ul>
-              <li>森田智子
-              <li>大内徳子
+              <li>永岡真実
+              <li>湯澤実歩
             </ul>
           <td>
             <script>
               g('kaikei')
             </script>
         <tr>
+          <td>渉外
+          <td>甲斐裕子
+          <td>
+            <script>
+              g('shogai')
+            </script>
+        <tr>
           <td>合宿所
           <td>
             <ul>
-              <li>藤井泰斗
-              <li>奥崎体
+              <li>久保田千貴
+              <li>藤原なつみ
             </ul>
           <td>
             <script>
@@ -220,100 +232,99 @@
             </script>
         <tr>
           <td>ホール
-          <td>山口瑞生
+          <td>
+            <ul>
+              <li>長岡佑磨</li>
+              <li>坂谷友里</li>
+            </ul>
           <td>
             <script>
               g('hall')
             </script>
         <tr>
           <td>レセプション・打ち上げ
-          <td>山田息吹
+          <td>西野友博
           <td>
             <script>
               g('reception')
             </script>
         <tr>
           <td>CD・DVD
-          <td>遠藤正也
+          <td>守谷涼夏
           <td>
             <script>
               g('video')
             </script>
         <tr>
           <td>楽譜
-          <td>頼近恭典
+          <td>田中綾
           <td>
         <tr>
           <td>譜面台
-          <td>久保田千貴
+          <td>反納紗雪
           <td>
             <script>
               g('fumendai')
             </script>
         <tr>
           <td>Web
-          <td>松本洋一郎
+          <td>野口颯真
           <td>
             <script>
               g('web')
             </script>
         <tr>
           <td>エントリー
-          <td>松本洋一郎
+          <td>野口颯真
           <td>
             <script>
               g('entry')
             </script>
         <tr>
           <td>デザイン
-          <td>青山雄一郎
+          <td>光野萌
           <td>
             <script>
               g('design')
             </script>
         <tr>
-          <td>パンフレット・チケット
-          <td>井上和子
+          <td>OB・OG
+          <td>光野萌
+          <td>
+            <script>
+              g('obog')
+            </script>
+        <tr>
+          <td>チケット
+          <td>北崎ほなみ
           <td>
             <script>
               g('ticket')
             </script>
         <tr>
           <td>広報
-          <td>
-            <ul>
-              <li>佐藤真由
-              <li>平岡敬一
-            </ul>
+          <td>吉田真理
           <td>
             <script>
               g('kouhou')
             </script>
         <tr>
           <td>後援
-          <td>
-            <ul>
-              <li>佐藤真由
-              <li>平岡敬一
-            </ul>
+          <td>脇中日向子
           <td>
             <script>
               g('kouen')
             </script>
         <tr>
           <td>前当日
-          <td>
-            <ul>
-              <li>金井陽奈
-              <li>山口栞
-            </ul>
+          <td>岡本花乃
           <td>
             <script>
               g('zentoujitsu')
             </script>
         <tr>
           <td>運搬・特殊楽器
-          <td>渡辺詩織
+          <td>川上愛
           <td>
             <script>
               g('unpan')
@@ -322,13 +333,9 @@
           <td>指揮者
           <td>
             <ul>
-              <li>岩本奈々
-              <li>古賀愛華
+              <li>西村英弥璃
+              <li>中田千優
             </ul>
-          <td>
-        <tr>
-          <td>スタッフ
-          <td>泉亮介
           <td>
       </table>
     </article>
@@ -345,7 +352,14 @@
       "@type": "ListItem",
       "position": 1,
       "item": {
-        "@id": "/~kasumin/contact.html",
+        "@id": "https://nishiorche32.github.io/32th/members.html",
+        "name": "第32回西オケ"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "/32th/contact.html",
         "name": "お問い合わせ"
       }
     }]
