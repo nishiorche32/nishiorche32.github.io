@@ -24,11 +24,12 @@ iframe {
 }
 
 iframe#header {
-  height: 190px;
+  height: 265px;
 }
 
 iframe#footer {
-  height: 370px;
+  /*height: 370px;*/
+  height: 280px
 }
 
 p {
