@@ -159,13 +159,13 @@
   <div id="countdown"></div>
   <script>
     function countdown() {
-      var day_camp = new Date("2021/03/18 00:00:00 +0900");
-      var day_stage = new Date("2021/03/24 00:00:00 +0900");
+      var day_camp = new Date("2021/03/17 00:00:00 +0900");
+      var day_stage = new Date("2021/03/21 00:00:00 +0900");
       var today = new Date();
       var days2camp = Math.ceil((day_camp - today) / (1000 * 60 * 60 * 24));
       var days2stage = Math.ceil((day_stage - today) / (1000 * 60 * 60 * 24));
       if (days2camp > 0) {
-        document.getElementById("countdown").innerHTML = '<p class="pre-day">合宿まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
+        document.getElementById("countdown").innerHTML = '<p class="pre-day">練習会まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
       } else if (days2stage > 0) {
         document.getElementById("countdown").innerHTML = '<p class="pre-day">本番まで</p><p class="day" style="color:#600">' + days2stage + '</p><p class="post-day">日</p>';
       } else {
